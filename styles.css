@@ -23,7 +23,7 @@ body, button, input, textarea{
   font-family: khula;
   background-image: url('RMbackground.jpg');
   background-size: 1500px 1200px;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
 
 a{
@@ -190,12 +190,14 @@ p.text {
 
 
 
+
+
 /* start of about page header styling */
 
 .about-page, button, input, textarea{
   font-family: khula;
   background-image: url('background2.jpg');
-  background-size: 1450px 1400px;
+  background-size: 1800px 1450px;
   overflow-x: hidden;
 }
 
@@ -221,6 +223,7 @@ nav .container-2 {
   line-height: 2;
   color: var(--main-color);
   display: flex;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .logo-2 {
@@ -268,6 +271,10 @@ nav .container-2 {
 
 /* end of about page header styling */
 
+
+
+
+
 /* start of about page syling */
 
 .about-container{
@@ -277,25 +284,38 @@ nav .container-2 {
   padding: 0rem;
   margin: 0 auto;
   margin-left: 4rem;
+  margin-top: -2.2rem;
 }
 
 .about-p{
-  color: var(--main-color);
+  color: #434343;
   display: flex;
   margin-top: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 20px;
+  text-align: left;
+  border: black;
+  border-width: 3rem;
+  transition: 0.2s ease-in-out transform;
+}
 
+.about-p:hover{
+  background-color: #ebebeb; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+  transform: scale(1.1, 1.1);
+  cursor: default;
 }
 
 .img-about {
-  margin-top: 2rem;
-  width: 14rem;
+  margin-top: -1rem;
+  width: 19rem;
   display: flex;
   float: right;
   margin-right: 12rem;
   transform:
     perspective(750px)
     translate3d(0px, 0px, -250px)
-    rotateX(24deg)
     scale(0.9, 0.9);
   border-radius: 20px;
   border: 10px solid var(--main-color);
@@ -307,5 +327,16 @@ nav .container-2 {
       transform: translate3d(0px, 0px, -250px);
     }
 
+.about-me-underline{
+  font-size:large;
+  text-decoration: underline;
+  color: rgb(232, 183, 70);
+  transition: 0.3s;
+}
+
+.about-me-underline:hover{
+  color: #60b1da;
+
+}
 
 /* end of about page styling */

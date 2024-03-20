@@ -77,8 +77,13 @@ nav .container {
   width: 100px;
   display: flex;
   align-items: center;
+  transition: 0.2s ease-in-out transform;
 }
 
+.logo:hover{
+  transform: scale(1.1, 1.1);
+  cursor: default;
+}
 .links ul{
   display: flex;
 }
@@ -280,7 +285,7 @@ nav .container-2 {
   padding: 0rem;
   margin: 0 auto;
   margin-left: 3.8rem;
-  margin-top: -6rem;
+  margin-top: -5.2rem;
 }
 
 .about-p{
@@ -347,7 +352,7 @@ nav .container-2 {
 .skill-page, button, input, textarea{
   font-family: khula;
   background-image: url('portfolioWeb.jpg');
-  background-size: 1480px 1000px;
+  background-size: 1650px 1100px;
   overflow-x: hidden;
 }
 
@@ -376,10 +381,16 @@ nav .container-2 {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-.logo-2 {
+.logo {
   width: 100px;
   display: flex;
   align-items: center;
+  transition: 0.2s ease-in-out transform;
+}
+
+.logo:hover{
+  transform: scale(1.1, 1.1);
+  cursor: default;
 }
 
 .links-2 ul{
@@ -420,6 +431,78 @@ nav .container-2 {
 
 
 /* end of skill page header styling */
+
+
+/* start of skill page skills styling */
+
+.container-3{
+  width: 64rem;
+  background-color: #d7d6d6dc;
+  border-radius: 4rem;
+  padding: 1.4rem;
+  text-align: center;
+  margin-left: 14rem;
+  box-shadow: 00px 20px 10px -20px black;
+  transition: 0.25s ease-in-out transform;
+}
+
+.container-3:hover{
+  transform: scale(1.01, 1.01);
+}
+
+.skills-p{
+  font-family: khula;
+  width: 21rem;
+  margin-left: 19.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:xx-large;
+  position: relative;
+  margin-bottom: 2rem;
+  color: #434343;
+}
+
+.skills-p::before{
+  content: "";;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 3px;
+  background-color: rgb(0, 151, 206);
+  transition: width 0.55s ease-out;
+}
+
+.skills-p:hover::before{
+  width: 60%;
+  left: 0;
+  right: auto;
+}
+
+
+.skill-icons{
+  width: 10rem;
+  height: 10rem;
+  padding: 50px;
+  text-align: center;
+  margin-right: 1.3rem;
+  background: #ebebeb;
+  border-radius: 3rem;
+  transition: 0.2s ease-in-out transform;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.skill-icons:hover{
+  background-color: #ebebeb; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+  transform: scale(1.1, 1.1);
+  cursor: default;
+}
+
+
+
+/* end of skill page skills styling */
 
 
 /* end of skill page styling */

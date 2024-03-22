@@ -109,6 +109,22 @@ nav .container {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.links a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px; 
+  background-color: rgb(231, 191, 30); 
+  transition: width 0.25s ease-out; 
+}
+
+.links a:hover::before {
+  width: 25%;
+}
+
 .links a:hover{
   color: var(--main-color);
 }
@@ -269,6 +285,36 @@ nav .container-2 {
   background-color: #434343;
 }
 
+.links-2 a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px; 
+  background-color: rgb(231, 191, 30); 
+  transition: width 0.25s ease-out; 
+}
+
+.links-2 a:hover::before {
+  width: 25%;
+}
+
+.links-2 a {
+  display: inline-block;
+  padding: .9rem 1.2rem;
+  color: var(--dark-one);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1;
+  transition: 0.3s;
+  position: relative; 
+}
+
+
+
+
 
 /* end of about page header styling */
 
@@ -278,58 +324,110 @@ nav .container-2 {
 
 /* start of about page syling */
 
+.about-h2{
+  text-transform: uppercase;
+  padding: 18px;
+  display: flexbox;
+  font-family: khula;
+  width: 20rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:xx-large;
+  position: relative;
+  color: var(--main-color);
+
+}
+
 .about-container{
   position: relative;
-  z-index: 5;
-  max-width: 65rem;
-  padding: 0rem;
+  max-width: 45rem;
+  max-height: 40rem;
+  padding: 1rem;
   margin: 0 auto;
-  margin-left: 3.8rem;
-  margin-top: -5.2rem;
+  margin-left: 2.8rem;
+  margin-top: -3.8rem;
+  background-color: #d7d6d6dc;
+  border-radius: 5rem;
+  width: 100%;
+  transition: 0.3s ease-in-out transform;
+  box-shadow: 00px 20px 10px -20px black;
+}
+
+.about-container:hover{
+  transform: scale(1.01, 1.01);
+}
+
+.about-me{
+  font-family: khula;
+  display: inline-block;
+  margin-left: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:xx-large;
+  position: relative;
+  margin-bottom: 1rem;
+  color: #434343;
+}
+
+.about-me::before{
+  content: "";;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 3px;
+  background-color: rgb(0, 151, 206);
+  transition: width 0.35s ease-out;
+}
+
+.about-me:hover::before{
+  width: 30%;
+  left: 0;
+  right: auto;
 }
 
 .about-p{
   color: #434343;
-  display: flex;
-  margin-top: 2rem;
-  background-color: rgb(255, 255, 255);
+  width: 40rem;
+  margin-bottom: 2rem;
+  background-color: #ebebeb;
   border-radius: 2rem;
   padding: 20px;
   text-align: left;
-  border: black;
-  border-width: 3rem;
   transition: 0.2s ease-in-out transform;
+  margin-left: 1.8rem;
+  font-size: small;
 }
 
 .about-p:hover{
   background-color: #ebebeb; 
   box-shadow: 0 0 10px rgba(0,0,0,0.3); 
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05, 1.05);
   cursor: default;
 }
 
 .img-about {
-  margin-top: -1rem;
-  width: 19rem;
+  margin-top: -3.4rem;
+  width: 20rem;
   display: flex;
+  position: absolute;
+  margin-left: 50rem;
   float: right;
-  margin-right: 1.2rem;
   transform:
     perspective(750px)
     translate3d(0px, 0px, -250px)
-    scale(0.9, 0.9);
-  border-radius: 20px;
-  border: 10px solid var(--main-color);
+    scale(0.99, 0.99);
+  border-radius: 4rem;
+  border: 10px solid #d7d6d6d0;
   box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in-out transform;
 }
 
 .img-about:hover {
-      transform: translate3d(0px, 0px, -250px);
+      transform: translate3d(0px, 0px, -200px);
     }
 
 .about-me-underline{
-  font-size:large;
   text-decoration: underline;
   color: rgb(232, 183, 70);
   transition: 0.3s;
@@ -470,11 +568,11 @@ nav .container-2 {
   width: 0;
   height: 3px;
   background-color: rgb(0, 151, 206);
-  transition: width 0.55s ease-out;
+  transition: width 0.35s ease-out;
 }
 
 .skills-p:hover::before{
-  width: 60%;
+  width: 30%;
   left: 0;
   right: auto;
 }

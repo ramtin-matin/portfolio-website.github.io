@@ -22,8 +22,8 @@
 body, button, input, textarea{
   font-family: khula;
   background-image: url('RMbackground.jpg');
-  background-size: 1500px 1200px;
-  overflow-x: hidden; 
+  background-size: 1600px 1300px;
+  overflow-x: hidden;
 }
 
 a{
@@ -60,6 +60,13 @@ header {
   height: 100%;
 }
 
+
+.home {
+  margin-left: 45em;
+  position: relative;
+  width: 100%;
+}
+
 nav {
   width: 100%;
   position: relative;
@@ -84,11 +91,11 @@ nav .container {
   transform: scale(1.1, 1.1);
   cursor: default;
 }
-.links ul{
+.links-2 ul{
   display: flex;
 }
 
-.links a{
+.links-2 a{
   display: inline-block;
   padding: .9rem 1.2rem;
   color: var(--dark-one);
@@ -99,7 +106,7 @@ nav .container {
   transition: 0.3s;
 }
 
-.links a.active {
+.links-2 a.active {
   background-color: var(--main-color);
   color: var(--light-one);
   border-radius: 2rem;
@@ -110,7 +117,7 @@ nav .container {
 }
 
 
-.links a::before {
+.links-2 a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -121,17 +128,21 @@ nav .container {
   transition: width 0.25s ease-out; 
 }
 
-.links a:hover::before {
-  width: 25%;
+.links-2 a:hover::before {
+  width: 25%
 }
 
-.links a:hover{
+.links-2 a:hover{
   color: var(--main-color);
 }
 
-.links a.active:hover{
+.links-2 a.active:hover{
   color: var(--main-color);
   background-color: #434343;
+}
+
+.links-2 a.active::before, .links-2 a.active:hover::before {
+  content: none; /* This removes the pseudo-element, thus no underline */
 }
 
 .header-title {
@@ -160,8 +171,8 @@ p.text {
   height: 100%;
   margin: 0;
   padding: 0;
-  margin-left: 41vw;
-  margin-top: -1rem;
+  margin-left: 39.4vw;
+  margin-top: 0.5rem;
 }
 
 .button {
@@ -169,10 +180,10 @@ p.text {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 50px;
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 6rem;
   line-height: 60px;
   text-align: center;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -599,10 +610,257 @@ nav .container-2 {
 }
 
 
-
 /* end of skill page skills styling */
 
 
 /* end of skill page styling */
+
+
+/* start of contact page styling */
+
+.contact-page, button, input, textarea{
+  font-family: khula;
+  background-image: url('contactPage.jpg');
+  background-size: 1500px 870px;
+  overflow-x: hidden;
+}
+
+.container-4{
+  position: relative;
+  z-index: 5;
+  max-width: 140rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+  margin-bottom: 5rem; 
+  
+}
+
+nav .container-4 {
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  align-items: center;
+}
+
+
+/* start of contact page background */
+
+.bg {
+  animation:slide 7s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(82, 194, 232) 50%, rgb(55, 164, 236) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:10s;
+}
+
+.bg3 {
+  animation-duration:12s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+/* end of contact page background */
+
+.container-5{
+  background-color:#d7d6d6c5;
+  border-radius: 1em;
+  box-shadow:0 0 1em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  width: 100%;
+  max-width: 800px;
+  height: 65%;
+  left:22%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:25%;
+  transition: transform 0.2s ease-in-out;
+  align-items: center;
+
+}
+
+.content{
+  font-family: khula;
+  text-transform: uppercase;
+  font-size:xx-large;
+  position: relative;
+  color: #434343;
+  width:12rem;
+  width: 100%;
+  max-width: 12rem;
+  left: 36%;
+  margin-top: -4rem;
+  margin-bottom: .9rem;
+}
+
+.content::before{
+  content: "";;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 3px;
+  background-color: rgb(0, 151, 206);
+  transition: width 0.35s ease-out;
+}
+
+.content:hover::before{
+  width: 30%;
+  left: 0;
+  right: auto;
+}
+
+.content:hover{
+  cursor: default;
+}
+
+
+.container-5:hover{
+  transform: scale(1.03, 1.03);
+}
+.content-input{
+  appearance: none;
+  border: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 4px;
+  outline: none;
+  width: 100%;
+  max-width: 80rem;
+  display: grid;
+  margin-top: .5rem;
+  box-shadow:0 0 .3em rgba(0,0,0,.25);
+  transition: background-color 0.3s ease-out;
+}
+
+.content-input:hover{
+  background-color: #e6e6e6;
+}
+
+
+.content-input:focus::placeholder {
+  color: transparent;
+}
+
+.content-input::placeholder{
+  color: rgb(139, 131, 131);
+  transition: color 0.3s ease;
+}
+
+
+.subject-input{
+  appearance: none;
+  border: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 4px;
+  outline: none;
+  width: 100%;
+  box-shadow:0 0 .3em rgba(0,0,0,.25);
+  transition: background-color 0.3s ease-out;
+}
+
+.subject-input:hover{
+  background-color: #e6e6e6;
+}
+
+.subject-input:focus::placeholder {
+  color: transparent;
+}
+
+.subject-input::placeholder{
+  color: rgb(139, 131, 131);
+  transition: color 0.3s ease;
+}
+
+.message-input{
+  appearance: none;
+  border: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 4px;
+  outline: none;
+  width: 100%;
+  height: 12rem;
+  padding-bottom: 157px;
+  box-shadow:0 0 .3em rgba(0,0,0,.25);
+  transition: background-color 0.3s ease-out;
+}
+
+.message-input:hover{
+  background-color: #e6e6e6;
+}
+
+
+.message-input:focus::placeholder {
+  color: transparent;
+}
+
+.message-input::placeholder{
+  color: rgb(139, 131, 131);
+  transition: color 0.3s ease;
+}
+
+.contact-send{
+  margin-top: 6px;
+  font-family: khula;
+  color: #434343;
+}
+
+.send-box{
+  margin-top: 1.2rem;
+  background-color: #60b1da;
+  border-radius: 4rem;
+  width: 100%;
+  max-width: 12rem;
+  display: inline-block;
+  margin-right: 1rem;
+  max-height: 3rem;
+  height: 100%;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-shadow:0 0 .5em rgba(0,0,0,.25);
+}
+
+.send-box:hover{
+  transform: scale(1.05, 1.05);
+  cursor: default;
+  background-color: #77bbe3; 
+}
+
+
+.input-containers{
+  max-width: 100%;
+  width: 730px;
+  margin-top: -1px;
+}
+
+
+
+
+/* end of contact page styling */
+
+
 
 

@@ -230,7 +230,7 @@ p.text {
 .about-page, button, input, textarea{
   font-family: khula;
   background-image: url('background2.jpg');
-  background-size: 1800px 1450px;
+  background-size: 1900px 1300px;
   overflow-x: hidden;
 }
 
@@ -355,13 +355,13 @@ nav .container-2 {
   max-height: 40rem;
   padding: 1rem;
   margin: 0 auto;
-  margin-left: 2.8rem;
-  margin-top: -3.8rem;
-  background-color: #d7d6d6dc;
-  border-radius: 5rem;
+  margin-left: 2.5rem;
+  margin-top: -23.8rem;
+  background-color: #d7d6d6;
+  border-radius: 1.5rem;
   width: 100%;
   transition: 0.3s ease-in-out transform;
-  box-shadow: 00px 20px 10px -20px black;
+  box-shadow: 20px 20px 20px -23px black;
 }
 
 .about-container:hover{
@@ -402,7 +402,7 @@ nav .container-2 {
   width: 40rem;
   margin-bottom: 2rem;
   background-color: #ebebeb;
-  border-radius: 2rem;
+  border-radius: 0.8rem;
   padding: 20px;
   text-align: left;
   transition: 0.2s ease-in-out transform;
@@ -417,26 +417,41 @@ nav .container-2 {
   cursor: default;
 }
 
-.img-about {
-  margin-top: -3.4rem;
-  width: 20rem;
-  display: flex;
-  position: absolute;
-  margin-left: 50rem;
-  float: right;
-  transform:
-    perspective(750px)
-    translate3d(0px, 0px, -250px)
-    scale(0.99, 0.99);
-  border-radius: 4rem;
-  border: 10px solid #d7d6d6d0;
-  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+.img-container{
+  position: relative;
+  max-width: 65rem;
+  height: 25rem;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-left: 1rem;
+  border-radius: 1.5rem;
+  margin-top: -3.8rem;
+  background-color: #cdcdcdcb;
+  width: 100%;
   transition: 0.3s ease-in-out transform;
+  box-shadow: 00px 20px 10px -20px black;
+  transition: transform 0.3s ease-in-out;
 }
 
-.img-about:hover {
-      transform: translate3d(0px, 0px, -200px);
-    }
+.img-container:hover{
+  transform: scale(1.01, 1.01);
+}
+
+.img-about {
+  width: 100%;
+  max-width: 15rem;
+  height: 100%;
+  max-height: 22rem;
+  display: flex;
+  position: absolute;
+  margin-left: 47rem;
+  float: right;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out transform;
+  border-radius: 2rem;
+  box-shadow: 20px 20px 20px -23px black;
+  
+}
 
 .about-me-underline{
   text-decoration: underline;
@@ -801,7 +816,8 @@ nav .container-4 {
   margin: 4px;
   outline: none;
   width: 100%;
-  height: 12rem;
+  height: 100%;
+  max-height: 12rem;
   padding-bottom: 157px;
   box-shadow:0 0 .3em rgba(0,0,0,.25);
   transition: background-color 0.3s ease-out;
@@ -821,34 +837,30 @@ nav .container-4 {
   transition: color 0.3s ease;
 }
 
-.contact-send{
-  margin-top: 6px;
-  font-family: khula;
-  color: #434343;
-}
-
 .send-box{
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
   background-color: #60b1da;
   border-radius: 4rem;
   width: 100%;
-  max-width: 12rem;
+  max-width: 10rem;
   display: inline-block;
   margin-right: 1rem;
-  max-height: 3rem;
-  height: 100%;
+  height: 2.5rem;
   text-transform: uppercase;
   transition: transform 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   box-shadow:0 0 .5em rgba(0,0,0,.25);
+  font-family: khula;
+  font-size: larger;
+  color: #434343;
+  border: none;
 }
 
 .send-box:hover{
   transform: scale(1.05, 1.05);
   cursor: default;
-  background-color: #77bbe3; 
+  background-color: #80c1e7; 
 }
-
 
 .input-containers{
   max-width: 100%;

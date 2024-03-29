@@ -49,7 +49,60 @@ img {
 /* end of general styles */
 
 
+/* start of loader style */
 
+.loader-wrapper1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('RMbackground.jpg');
+  background-size: 1600px 1300px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.loader-wrapper2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('background2.jpg');
+  background-size: 1900px 1300px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.loader-wrapper3{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('portfolioWeb.jpg');
+  background-size: 1650px 1100px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+/* end of loader style */
 
 
 /* header */
@@ -322,7 +375,6 @@ nav .container-2 {
   transition: 0.3s;
   position: relative; 
 }
-
 
 
 
@@ -647,7 +699,6 @@ nav .container-2 {
   padding: 0 4rem;
   margin: 0 auto;
   margin-bottom: 5rem; 
-  
 }
 
 nav .container-4 {
@@ -655,6 +706,8 @@ nav .container-4 {
   justify-content: space-between;
   height: 8rem;
   align-items: center;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
 }
 
 
@@ -671,6 +724,7 @@ nav .container-4 {
   top:0;
   z-index:-1;
 }
+
 
 .bg2 {
   animation-direction:alternate-reverse;

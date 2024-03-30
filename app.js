@@ -13,6 +13,7 @@ function loadContent(page) {
 }
 
 
+
 // preload/load for new page/refresh page functions for home/skills/about page
 
 window.addEventListener('load', function() {
@@ -51,6 +52,42 @@ window.addEventListener('load', function() {
 
 // contact me emailJS
 
-function sendMail(){
+function sendMail() {
+  // Get input values
+  var name = document.querySelector(".name-input").value.trim();
+  var email = document.querySelector(".email-input").value.trim();
+  var subject = document.querySelector(".subject-input").value.trim();
+  var message = document.querySelector(".message-input").value.trim();
 
+  // Check if any fields are empty
+  if (!name || !email || !subject || !message) {
+    alert("Please fill in all fields before sending.");
+    return; // Stop the function from proceeding further
+  }
+
+  var params = {
+    name: name,
+    email: email,
+    subject: subject,
+    message: message,
+  }
+
+  const serviceID = "ramtin.email";
+  const templateID = "template1";
+
+  emailjs.send(serviceID, templateID, params)
+    .then(response => {
+      console.log('SUCCESS!', response.status, response.text);
+      // Clearing the input fields after successful submission
+      document.querySelector(".name-input").value = "";
+      document.querySelector(".email-input").value = "";
+      document.querySelector(".subject-input").value = "";
+      document.querySelector(".message-input").value = "";
+      alert("Email sent successfully!");
+    }, err => {
+      console.log('FAILED...', err);
+      alert("Failed to send the email. Please try again later.");
+    });
 }
+
+

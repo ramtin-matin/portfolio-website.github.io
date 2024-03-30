@@ -102,6 +102,7 @@ img {
   transition: opacity 2s ease-in-out;
 }
 
+
 /* end of loader style */
 
 
@@ -407,8 +408,8 @@ nav .container-2 {
   max-height: 40rem;
   padding: 1rem;
   margin: 0 auto;
-  margin-left: 2.5rem;
-  margin-top: -23.8rem;
+  margin-left: 3.9rem;
+  margin-top: -24.9rem;
   background-color: #d7d6d6;
   border-radius: 1.5rem;
   width: 100%;
@@ -471,15 +472,15 @@ nav .container-2 {
 
 .img-container{
   position: relative;
-  max-width: 65rem;
+  max-width: 22rem;
   height: 25rem;
   padding: 1rem;
   margin: 0 auto;
-  margin-left: 1rem;
-  border-radius: 1.5rem;
-  margin-top: -3.8rem;
-  background-color: #cdcdcdcb;
+  margin-left: 60rem;
+  border-radius: 2rem;
+  background-color: #d7d6d6;
   width: 100%;
+  margin-top: -3rem;
   transition: 0.3s ease-in-out transform;
   box-shadow: 00px 20px 10px -20px black;
   transition: transform 0.3s ease-in-out;
@@ -494,9 +495,9 @@ nav .container-2 {
   max-width: 15rem;
   height: 100%;
   max-height: 22rem;
+  margin-left: 2.5rem;
   display: flex;
   position: absolute;
-  margin-left: 47rem;
   float: right;
   box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in-out transform;
@@ -687,8 +688,6 @@ nav .container-2 {
 
 .contact-page, button, input, textarea{
   font-family: khula;
-  background-image: url('contactPage.jpg');
-  background-size: 1500px 870px;
   overflow-x: hidden;
 }
 
@@ -762,7 +761,6 @@ nav .container-4 {
   top:25%;
   transition: transform 0.2s ease-in-out;
   align-items: center;
-
 }
 
 .content{
@@ -804,7 +802,7 @@ nav .container-4 {
 .container-5:hover{
   transform: scale(1.03, 1.03);
 }
-.content-input{
+.name-input{
   appearance: none;
   border: none;
   background: #f2f2f2;
@@ -820,19 +818,50 @@ nav .container-4 {
   transition: background-color 0.3s ease-out;
 }
 
-.content-input:hover{
+.name-input:hover{
   background-color: #e6e6e6;
 }
 
 
-.content-input:focus::placeholder {
+.name-input:focus::placeholder {
   color: transparent;
 }
 
-.content-input::placeholder{
+.name-input::placeholder{
   color: rgb(139, 131, 131);
   transition: color 0.3s ease;
 }
+
+.email-input{
+  appearance: none;
+  border: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 4px;
+  outline: none;
+  width: 100%;
+  max-width: 80rem;
+  display: grid;
+  margin-top: .5rem;
+  box-shadow:0 0 .3em rgba(0,0,0,.25);
+  transition: background-color 0.3s ease-out;
+}
+
+.email-input:hover{
+  background-color: #e6e6e6;
+}
+
+
+.email-input:focus::placeholder {
+  color: transparent;
+}
+
+.email-input::placeholder{
+  color: rgb(139, 131, 131);
+  transition: color 0.3s ease;
+}
+
 
 
 .subject-input{
@@ -901,19 +930,24 @@ nav .container-4 {
   margin-right: 1rem;
   height: 2.5rem;
   text-transform: uppercase;
-  transition: transform 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
   box-shadow:0 0 .5em rgba(0,0,0,.25);
   font-family: khula;
   font-size: larger;
   color: #434343;
   border: none;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .send-box:hover{
   transform: scale(1.05, 1.05);
-  cursor: default;
+  cursor: pointer;
   background-color: #80c1e7; 
+}
+
+.send-box:active {
+  transform: scale(0.95);
+  background-color: #4a8fab; /* Darker shade for click effect */
+  box-shadow: 0 0 0.5em rgba(0,0,0,0.5); /* Optional: make the shadow deeper */
 }
 
 .input-containers{
@@ -929,4 +963,44 @@ nav .container-4 {
 
 
 
+/* start of project page styling */
+
+.project-page, canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} 
+
+.project-page, button, input, textarea{
+  font-family: khula;;
+  overflow-x: hidden;
+}
+.container-6{
+  position: relative;
+  background-color: hsl(208, 69%, 62%);
+  z-index: 5;
+  max-width: 140rem;
+  padding: 0 4rem;
+  margin: 0 auto; 
+}
+
+nav .container-6 {
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.projesdct-container{
+  max-width: 60rem;
+  width: 100%;
+  max-height: 50rem;
+  height: 100%;
+  background-color: white;
+}
+/* end of project page styling */
 

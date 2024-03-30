@@ -13,7 +13,9 @@
       <nav>
         <div class="container-4">
           <div class="logo">
-            <img src="RM.jpg" alt="" />
+            <a href="homePage.html">
+              <img src="RM.jpg" alt="" />
+            </a>
           </div>
 
           <div class="links-2">
@@ -25,7 +27,7 @@
                 <a href="aboutPage.html">About</a>
               </li>
               <li>
-                <a href="projectsPage.html">Projects</a>
+                <a href="projectPage.html">Projects</a>
               </li>
               <li>
                 <a href="skillsPage.html">Skills</a>
@@ -49,11 +51,11 @@
     <div class="container-5">
       <h1 class="content">Contact Me</h1>
       <div class="input-containers">
-        <input type="text" class="content-input" placeholder="Name" />
-        <input type="email" class="content-input" placeholder="Email" />
+        <input type="text" class="name-input" placeholder="Name" />
+        <input type="email" class="email-input" placeholder="Email" />
         <input type="text" class="subject-input" placeholder="Subject" />
         <input type="text" class="message-input" placeholder="Message" />
-        <button class="send-box">Send</button>
+        <button class="send-box" onclick="sendMail()">Send</button>
       </div>
     </div>
     <!-- start of javascript -->

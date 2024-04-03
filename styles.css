@@ -1045,7 +1045,8 @@ nav .container-4 {
 
 .slide {
   position: relative;
-  overflow: hidden; /* Crucial for masking out any overflow */
+  overflow: hidden; 
+  border-radius: 1rem;/* Crucial for masking out any overflow */
   /* Ensure .slide dimensions are properly defined to fit the image */
 }
 

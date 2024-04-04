@@ -49,6 +49,37 @@ img {
 /* end of general styles */
 
 
+@media (max-width: 480px) {
+  body, button, input, textarea {
+    font-size: 12px; /* Smaller font size for readability */
+  }
+
+  .container, .container-2, .container-3, .container-4, .container-5 {
+    padding: 0 2%; /* Reduce padding on smaller screens */
+    max-width: 100%; /* Allow containers to fill the screen */
+  }
+
+  header, .home, .about-page, .skill-page, .contact-page, .project-page {
+    background-size: cover; /* Ensure background covers the viewport */
+  }
+
+  .header-title, .header-title-2, .skills-p, .about-me, .content {
+    font-size: 20px; /* Scale down large text for mobile */
+  }
+
+  .links-2 ul, .wrapper, .img-container {
+    display: block; /* Stack elements vertically */
+    margin: 0 auto; /* Center elements */
+    max-width: 90%; /* Ensure content doesn't touch the sides */
+  }
+
+  .img-about, .project-img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
 /* start of loader style */
 
 .loader-wrapper1{

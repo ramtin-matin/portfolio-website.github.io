@@ -1,5 +1,4 @@
-// code to lead user to page
-// when nav bar link is clicked
+
 
 
 

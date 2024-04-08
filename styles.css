@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
-@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
 
 :root {
   --dark-one: #333;
@@ -49,7 +49,7 @@ img {
 /* end of general styles */
 
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
   body, button, input, textarea {
     font-size: 12px; /* Smaller font size for readability */
   }
@@ -246,6 +246,42 @@ p.text {
   color: var(--main-color);
 }
 /* end header */
+
+/* Responsive Styles for smaller screens (home screen)*/
+@media (max-width: 768px) {
+  .home {
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+
+  .header-content {
+    padding: 20px; /* Add some padding for smaller screens */
+  }
+
+  .header-title {
+    font-size: 4rem; 
+    margin-left: 0; 
+  }
+
+  p.text {
+    margin-top: -2.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.6rem; 
+  }
+
+  .links-2 ul {
+    flex-direction: column;
+  }
+
+  .links-2 a {
+    text-align: center; 
+    width: 100%;
+    max-width: 10rem; 
+    margin: 1rem;
+    height: 2.5rem;
+  }
+  
+}
+
 
 /* start of icon styling */
 

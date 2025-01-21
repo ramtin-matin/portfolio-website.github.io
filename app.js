@@ -1,4 +1,5 @@
-
+// code to lead user to page
+// when nav bar link is clicked
 
 
 
@@ -19,7 +20,7 @@ window.addEventListener('load', function() {
 
 
 
-// contact me emailJS
+// contact me emailJS`
 
 function sendMail() {
   // Get input values

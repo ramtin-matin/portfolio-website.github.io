@@ -6,7 +6,7 @@
   --dark-one: #333;
   --dark-two: #7a7a7a;
   --dark-three: rgb(0, 0, 0);
-  --main-color: #faf7f7;
+  --main-color: #e1e1e1;
   --light-two: #f9fafb;
   --light-three: #f6f7fb;
 }
@@ -19,10 +19,14 @@
   box-sizing: border-box;
 }
 
+
 body, button, input, textarea{
   font-family: khula;
   background-image: url('RMbackground.jpg');
-  background-size: 1600px 1300px;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-attachment: fixed;
+  background-size: cover;
   overflow-x: hidden;
 }
 
@@ -89,41 +93,10 @@ img {
   top: 0;
   left: 0;
   background-image: url('RMbackground.jpg');
-  background-size: 1600px 1300px;
-  overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 1;
-  transition: opacity 2s ease-in-out;
-}
-
-.loader-wrapper2{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('background2.jpg');
-  background-size: 1900px 1300px;
-  overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 1;
-  transition: opacity 2s ease-in-out;
-}
-
-.loader-wrapper3{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('portfolioWeb.jpg');
-  background-size: 1650px 1100px;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-attachment: fixed;
+  background-size: cover;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -147,26 +120,43 @@ header {
 
 
 .home {
-  margin-left: 45em;
   position: relative;
   width: 100%;
+  width: fit-content;
+  left: 50%;
+}
+
+@media (max-width: 1600px) {
+  nav.home {
+    position: relative;
+    width: 100%;
+    width: fit-content;
+    left: 50%;
+  }
+  
+  
 }
 
 nav {
   width: 100%;
   position: relative;
   z-index: 50;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  top: 0;
 }
 
-nav .container {
+nav .container-2 {
   display: flex;
   justify-content: space-between;
   height: 6rem;
   align-items: center;
+  max-width: 100%;
 }
 
 .logo {
-  width: 100px;
+  width: 5%;
   display: flex;
   align-items: center;
   transition: 0.2s ease-in-out transform;
@@ -246,6 +236,8 @@ p.text {
   color: var(--main-color);
 }
 /* end header */
+
+
 
 /* Responsive Styles for smaller screens (home screen)*/
 @media (max-width: 768px) {
@@ -350,9 +342,7 @@ p.text {
 
 .about-page, button, input, textarea{
   font-family: khula;
-  background-image: url('background2.jpg');
-  background-size: 1900px 1300px;
-  overflow-x: hidden;
+  background-image: none;
 }
 
 .container-2{
@@ -366,11 +356,14 @@ p.text {
 }
 
 nav .container-2 {
-  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
-  height: 6rem;
+  height: 8rem;
   align-items: center;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  width: 100%;
+  max-width: 100%;
 }
 
 .header-title-2 {
@@ -454,6 +447,9 @@ nav .container-2 {
 
 
 /* start of about page syling */
+.about-page {
+  overflow-y: hidden;
+}
 
 .about-h2{
   text-transform: uppercase;
@@ -470,16 +466,15 @@ nav .container-2 {
 }
 
 .about-container{
-  position: relative;
-  max-width: 45rem;
-  max-height: 40rem;
+  max-width: 40%;
+  margin-left: 5%;
+  max-height: 45%;
   padding: 1rem;
-  margin: 0 auto;
-  margin-left: 3.9rem;
-  margin-top: -24.9rem;
   background-color: #d7d6d6;
   border-radius: 1.5rem;
   width: 100%;
+  position: absolute;
+  left: 10%;
   transition: 0.3s ease-in-out transform;
   box-shadow: 20px 20px 20px -23px black;
 }
@@ -491,13 +486,14 @@ nav .container-2 {
 .about-me{
   font-family: khula;
   display: inline-block;
-  margin-left: 3.2rem;
+  left: 15%;
   text-align: center;
   text-transform: uppercase;
   font-size:xx-large;
   position: relative;
   margin-bottom: 1rem;
   color: #434343;
+  max-width: fit-content;
 }
 
 .about-me::before{
@@ -519,8 +515,8 @@ nav .container-2 {
 
 .about-p{
   color: #434343;
-  width: 40rem;
-  margin-bottom: 2rem;
+  max-width: fit-content;
+  margin: 1rem;
   background-color: #ebebeb;
   border-radius: 0.8rem;
   padding: 20px;
@@ -538,19 +534,14 @@ nav .container-2 {
 }
 
 .img-container{
-  position: relative;
-  max-width: 22rem;
-  height: 25rem;
-  padding: 1rem;
-  margin: 0 auto;
-  margin-left: 60rem;
+  max-width: 20%;
+  padding: 5px;
+  background-color: #d4d4d437;
   border-radius: 2rem;
-  background-color: #d7d6d6;
-  width: 100%;
-  margin-top: -3rem;
+  position: absolute;
+  right: 15%;
   transition: 0.3s ease-in-out transform;
   box-shadow: 00px 20px 10px -20px black;
-  transition: transform 0.3s ease-in-out;
 }
 
 .img-container:hover{
@@ -558,19 +549,11 @@ nav .container-2 {
 }
 
 .img-about {
-  width: 100%;
-  max-width: 15rem;
-  height: 100%;
-  max-height: 22rem;
-  margin-left: 2.5rem;
-  display: flex;
-  position: absolute;
-  float: right;
-  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  max-width: 100%;
   transition: 0.3s ease-in-out transform;
   border-radius: 2rem;
-  box-shadow: 20px 20px 20px -23px black;
-  
+
 }
 
 .about-me-underline{
@@ -596,7 +579,10 @@ nav .container-2 {
 .skill-page, button, input, textarea{
   font-family: khula;
   background-image: url('portfolioWeb.jpg');
-  background-size: 1650px 1100px;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-attachment: fixed;
+  background-size: cover;
   overflow-x: hidden;
 }
 
@@ -625,12 +611,6 @@ nav .container-2 {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-.logo {
-  width: 100px;
-  display: flex;
-  align-items: center;
-  transition: 0.2s ease-in-out transform;
-}
 
 .logo:hover{
   transform: scale(1.1, 1.1);
@@ -680,14 +660,15 @@ nav .container-2 {
 /* start of skill page skills styling */
 
 .container-3{
-  width: 64rem;
+  width: 50%;
   background-color: #d7d6d6dc;
   border-radius: 4rem;
   padding: 1.4rem;
   text-align: center;
-  margin-left: 14rem;
+  margin-left: 25%;
   box-shadow: 00px 20px 10px -20px black;
   transition: 0.25s ease-in-out transform;
+  margin-bottom: 5%;
 }
 
 .container-3:hover{
@@ -696,8 +677,7 @@ nav .container-2 {
 
 .skills-p{
   font-family: khula;
-  width: 21rem;
-  margin-left: 19.2rem;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   font-size:xx-large;
@@ -709,7 +689,7 @@ nav .container-2 {
 .skills-p::before{
   content: "";;
   position: absolute;
-  left: 0;
+  left: 35%;
   bottom: 0; 
   width: 0;
   height: 3px;
@@ -718,8 +698,8 @@ nav .container-2 {
 }
 
 .skills-p:hover::before{
-  width: 30%;
-  left: 0;
+  width: 10%;
+  left: 35%;
   right: auto;
 }
 
@@ -1039,74 +1019,54 @@ nav .container-4 {
   background-image: none;
 }
 
-.container-4{
-  position: relative;
-  z-index: 5;
-  max-width: 140rem;
-  padding: 0 4rem;
-  margin: 0 auto;
-  margin-bottom: 5rem; 
-}
-
-nav .container-4 {
-  display: flex;
-  justify-content: space-between;
-  height: 8rem;
-  align-items: center;
-  opacity: 1;
-  transition: opacity 2s ease-in-out;
-}
 
 
 .project-container{
-  background-color:#d7d6d6c5;
+  background-color:#8d8d8dc5;
   border-radius: 1em;
   box-shadow:0 0 1em rgba(0,0,0,.25);
-  box-sizing:border-box;
-  width: 100%;
-  max-width: 1100px;
-  height: 100%;
-  left:12%;
-  padding:10vmin;
+  width: 80%;
+  height: 30%;
+  left: 10%;
+  padding:10vmin; 
   position: relative;
   margin-bottom: 3rem;
   text-align:center;
-  transition: transform 0.4s ease-in-out;
-  align-items: center;
-  overflow: hidden;
-}
-
-.project-container:hover{
-  transform: scale(1.01, 1.01);
 }
 
 .slide .project-img{
   width: 100%;  
-  height: 500px; 
+  height: 30%; 
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
+}
+
+
+
+.project-img:hover {
+  transform: scale(1.01);
 }
 
 .project-description1{
   position: absolute;
   bottom: 0; 
   left: 0; 
-  background: linear-gradient(rgba(160, 214, 243, 0.537), rgba(145, 178, 226, 0.75), #3fb3e88e, rgba(89, 162, 193, 0.538));
+  background:#726e6ec5;
   color: #fff; 
+  font-size:x-large;
   width: 100%;
-  max-width: 945px;
-  transform: translateY(50%);
+  transform: translateY(70%);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   padding: 20px;
   opacity: 0;
-  height: 35%; 
+  height: 25%; 
   box-sizing: border-box;
   overflow: hidden;
   margin-bottom: .6rem;
 }
 
 .slide:hover .project-description1 {
-  transform: translateY(0%);
+  transform: translateY(3%);
   opacity: 1;
 }
 
@@ -1155,6 +1115,35 @@ nav .container-4 {
   user-select: none;
   margin-right: 2rem;
   background-color: #47aee5;
+}
+
+.my-project{
+  font-family: khula;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:xx-large;
+  position: relative;
+  margin-bottom: 1rem;
+  color: #e3e3e3;
+  max-width: fit-content;
+}
+
+.my-project::before{
+  content: "";;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 3px;
+  background-color: rgb(0, 151, 206);
+  transition: width 0.35s ease-out;
+}
+
+.my-project:hover::before{
+  width: 30%;
+  left: 0;
+  right: auto;
 }
 
 /* Position the "next button" to the right */

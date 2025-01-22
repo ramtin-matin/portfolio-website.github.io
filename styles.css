@@ -343,7 +343,11 @@ p.text {
 .about-page, button, input, textarea{
   font-family: khula;
   background-image: none;
+  background-color: #5ebbe0;
 }
+
+
+
 
 .container-2{
   position: relative;
@@ -451,48 +455,48 @@ nav .container-2 {
   overflow-y: hidden;
 }
 
-.about-h2{
-  text-transform: uppercase;
-  padding: 18px;
-  display: flexbox;
-  font-family: khula;
-  width: 20rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-size:xx-large;
-  position: relative;
-  color: var(--main-color);
-
-}
-
 .about-container{
-  max-width: 40%;
-  margin-left: 5%;
-  max-height: 45%;
-  padding: 1rem;
-  background-color: #d7d6d6;
-  border-radius: 1.5rem;
-  width: 100%;
-  position: absolute;
-  left: 10%;
-  transition: 0.3s ease-in-out transform;
-  box-shadow: 20px 20px 20px -23px black;
+  border-radius: 1em;
+  box-shadow:0 0 1em rgba(0, 0, 0, 0.137);
+  width: 50%;
+  height: 30%;
+  left: 5%;
+  padding:2vmin; 
+  position: relative;
+  text-align:center;
 }
 
-.about-container:hover{
-  transform: scale(1.01, 1.01);
+.about-container-2{
+  border-radius: 1em;
+  box-shadow:0 0 1em rgba(0, 0, 0, 0.116);
+  width: 30%;
+
+  left: 15%;
+  padding: 2vh;
+  position: relative;
+  text-align:center;
+}
+
+.about-container-3{
+  border-radius: 1em;
+  box-shadow:0 0 1em rgba(0, 0, 0, 0.147);
+  width: 50%;
+
+  left: 5%;
+  padding: 2vh;
+  position: relative;
+  text-align:center;
 }
 
 .about-me{
   font-family: khula;
   display: inline-block;
-  left: 15%;
   text-align: center;
   text-transform: uppercase;
   font-size:xx-large;
   position: relative;
   margin-bottom: 1rem;
-  color: #434343;
+  color: #313131;
   max-width: fit-content;
 }
 
@@ -503,7 +507,7 @@ nav .container-2 {
   bottom: 0; 
   width: 0;
   height: 3px;
-  background-color: rgb(0, 151, 206);
+  background-color: rgb(232, 183, 70);
   transition: width 0.35s ease-out;
 }
 
@@ -514,27 +518,32 @@ nav .container-2 {
 }
 
 .about-p{
-  color: #434343;
+  color: #ffffff;
   max-width: fit-content;
   margin: 1rem;
-  background-color: #ebebeb;
-  border-radius: 0.8rem;
-  padding: 20px;
-  text-align: left;
+  background-color: #313131;
+  border-radius: 0.5rem;
+  padding: 10px;
+  text-align: center;
   transition: 0.2s ease-in-out transform;
-  margin-left: 1.8rem;
-  font-size: small;
+  font-size: x-large;
 }
 
-.about-p:hover{
-  background-color: #ebebeb; 
-  box-shadow: 0 0 10px rgba(0,0,0,0.3); 
-  transform: scale(1.05, 1.05);
-  cursor: default;
+.social-media {
+  color: #ffffff;
+  max-width: fit-content;
+  margin: 1rem;
+  background-color: #313131;
+  border-radius: 0.5rem;
+  padding: 10px;
+  text-align: center;
+  transition: 0.2s ease-in-out transform;
+  font-size: x-large;
 }
 
 .img-container{
-  max-width: 20%;
+  margin-top: 5%;
+  max-width: 15%;
   padding: 5px;
   background-color: #d4d4d437;
   border-radius: 2rem;
@@ -550,10 +559,9 @@ nav .container-2 {
 
 .img-about {
   max-width: 100%;
-  max-width: 100%;
   transition: 0.3s ease-in-out transform;
   border-radius: 2rem;
-
+  padding: 1vh;
 }
 
 .about-me-underline{
@@ -736,24 +744,7 @@ nav .container-2 {
 .contact-page, button, input, textarea{
   font-family: khula;
   overflow-x: hidden;
-}
-
-.container-4{
-  position: relative;
-  z-index: 5;
-  max-width: 140rem;
-  padding: 0 4rem;
-  margin: 0 auto;
-  margin-bottom: 5rem; 
-}
-
-nav .container-4 {
-  display: flex;
-  justify-content: space-between;
-  height: 8rem;
-  align-items: center;
-  opacity: 1;
-  transition: opacity 2s ease-in-out;
+  background: none;
 }
 
 
@@ -793,38 +784,32 @@ nav .container-4 {
 
 /* end of contact page background */
 
-.container-5{
-  background-color:#d7d6d6c5;
+.contact-container{
+  background-color:#c7c7c7b2;
   border-radius: 1em;
   box-shadow:0 0 1em rgba(0,0,0,.25);
-  box-sizing:border-box;
-  width: 100%;
-  max-width: 800px;
-  height: 65%;
-  left:22%;
-  padding:10vmin;
-  position:fixed;
+  width: 50%;
+  height: 30%;
+  left: 25%;
+  padding:10vmin; 
+  position: relative;
+  margin-bottom: 3rem;
   text-align:center;
-  top:25%;
-  transition: transform 0.2s ease-in-out;
-  align-items: center;
 }
 
-.content{
+.contact-me{
   font-family: khula;
+  display: inline-block;
+  text-align: center;
   text-transform: uppercase;
   font-size:xx-large;
   position: relative;
-  color: #434343;
-  width:12rem;
-  width: 100%;
-  max-width: 12rem;
-  left: 36%;
-  margin-top: -4rem;
-  margin-bottom: .9rem;
+  margin-bottom: 1rem;
+  color: #706f6f;
+  max-width: fit-content;
 }
 
-.content::before{
+.contact-me::before{
   content: "";;
   position: absolute;
   left: 0;
@@ -835,7 +820,7 @@ nav .container-4 {
   transition: width 0.35s ease-out;
 }
 
-.content:hover::before{
+.contact-me:hover::before{
   width: 30%;
   left: 0;
   right: auto;
@@ -857,9 +842,9 @@ nav .container-4 {
   border-radius: 10px;
   margin: 4px;
   outline: none;
-  width: 100%;
-  max-width: 80rem;
-  display: grid;
+  width: 30%;
+  max-width: 100%;
+  position: relative;
   margin-top: .5rem;
   box-shadow:0 0 .3em rgba(0,0,0,.25);
   transition: background-color 0.3s ease-out;
@@ -887,10 +872,9 @@ nav .container-4 {
   border-radius: 10px;
   margin: 4px;
   outline: none;
-  width: 100%;
-  max-width: 80rem;
-  display: grid;
-  margin-top: .5rem;
+  width: 30%;
+  max-width: 100%;
+  position: relative;
   box-shadow:0 0 .3em rgba(0,0,0,.25);
   transition: background-color 0.3s ease-out;
 }
@@ -920,6 +904,9 @@ nav .container-4 {
   margin: 4px;
   outline: none;
   width: 100%;
+  max-width: 100%;
+  display: block;
+  position: relative;
   box-shadow:0 0 .3em rgba(0,0,0,.25);
   transition: background-color 0.3s ease-out;
 }
@@ -946,6 +933,8 @@ nav .container-4 {
   margin: 4px;
   outline: none;
   width: 100%;
+  max-width: 100%;
+  position: relative;
   height: 100%;
   max-height: 12rem;
   padding-bottom: 157px;
@@ -971,15 +960,12 @@ nav .container-4 {
   margin-top: 0.8rem;
   background-color: #60b1da;
   border-radius: 4rem;
-  width: 100%;
-  max-width: 10rem;
-  display: inline-block;
-  margin-right: 1rem;
-  height: 2.5rem;
+  width: 15%;
+  height: 10%;
   text-transform: uppercase;
   box-shadow:0 0 .5em rgba(0,0,0,.25);
   font-family: khula;
-  font-size: larger;
+  font-size: small;
   color: #434343;
   border: none;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -999,7 +985,7 @@ nav .container-4 {
 
 .input-containers{
   max-width: 100%;
-  width: 730px;
+  width: 100%;
   margin-top: -1px;
 }
 
@@ -1022,9 +1008,8 @@ nav .container-4 {
 
 
 .project-container{
-  background-color:#8d8d8dc5;
   border-radius: 1em;
-  box-shadow:0 0 1em rgba(0,0,0,.25);
+  box-shadow:0 0 1em rgba(0, 0, 0, 0.144);
   width: 80%;
   height: 30%;
   left: 10%;
@@ -1125,7 +1110,7 @@ nav .container-4 {
   font-size:xx-large;
   position: relative;
   margin-bottom: 1rem;
-  color: #e3e3e3;
+  color: #3e3e3e;
   max-width: fit-content;
 }
 
@@ -1136,7 +1121,7 @@ nav .container-4 {
   bottom: 0; 
   width: 0;
   height: 3px;
-  background-color: rgb(0, 151, 206);
+  background-color: rgb(206, 203, 0);
   transition: width 0.35s ease-out;
 }
 

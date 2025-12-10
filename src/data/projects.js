@@ -1,7 +1,7 @@
 // Project screenshots
-const ScoringSystemPic = "src/assets/scoringsystem.jpg";
-const PortfolioPic = "src/assets/portfolio.png";
-const habitTrackerPic = "src/assets/habitTracker.png";
+import ScoringSystemPic from "../assets/scoringsystem.jpg";
+import PortfolioPic from "../assets/portfolio.png";
+import habitTrackerPic from "../assets/habitTracker.png";
 
 export const INITIAL_PROJECTS = [
   {

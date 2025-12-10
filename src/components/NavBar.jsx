@@ -3,7 +3,7 @@ import { FileText, Menu, X, Sun, Moon } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
 import { NAV_ITEMS } from "../data/navItems";
 import { useTheme } from "../context/ThemeContext";
-import { resumeUrl } from "../views/HomeView";
+import resumeUrl from "../assets/ramtinResume.pdf";
 
 const Navbar = ({ activeView, handleNavClick, isMenuOpen, setIsMenuOpen }) => {
   const { isDarkMode, toggleDarkMode } = useTheme();

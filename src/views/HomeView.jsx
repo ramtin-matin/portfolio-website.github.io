@@ -1,11 +1,9 @@
 import AnimatedButton from "../components/AnimatedButton";
 import { Code, FileText } from "lucide-react";
-
-export const resumeUrl = "src/assets/ramtinResume.pdf";
+import profileImageUrl from "../assets/picture.jpg";
+import resumeUrl from "../assets/ramtinResume.pdf";
 
 const HomeView = ({ handleNavClick }) => {
-  const profileImageUrl = "src/assets/picture.jpg";
-
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center p-6 text-center lg:text-left min-h-screen-minus-header max-w-7xl mx-auto">
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pr-16 mb-12 lg:mb-0 order-2 lg:order-1">

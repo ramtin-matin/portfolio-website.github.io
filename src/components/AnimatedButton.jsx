@@ -1,5 +1,3 @@
-import { useTheme } from "../context/ThemeContext";
-
 const AnimatedButton = ({
   children,
   onClick,

@@ -34,8 +34,6 @@ const AppContent = () => {
     setIsMenuOpen(false); // Close menu on selection
   };
 
-  // Custom styles for global animations and custom colors
-
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
       {/* Main Content Area */}

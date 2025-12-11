@@ -15,7 +15,7 @@ export const INITIAL_PROJECTS = [
   },
   {
     id: 2,
-    title: "Modern Portfolio Site",
+    title: "My Portfolio",
     description:
       "The very site you are viewing, built with a focus on dark/light mode and modern, responsive design principles.",
     tech: ["React.js", "Tailwind CSS", "JavaScript"],
@@ -24,7 +24,7 @@ export const INITIAL_PROJECTS = [
   },
   {
     id: 3,
-    title: "Full-Stack Habit Tracker",
+    title: "Habit Tracker",
     description:
       "An application to track, analyze, and manage daily habits with RESTful APIs and modern database schema.",
     tech: ["React.js", "Python", "FastAPI", "SQL", "Tailwind CSS"],

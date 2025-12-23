@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal portfolio website, live at **[ramtinmatin.com](https://ramtinmatin.com)**.
 
-It is a fully responsive, single-page application built to showcase my skills, projects, and professional background. The site is crafted with a modern tech stack, emphasizing a clean user interface, smooth animations, and a seamless user experience with both light and dark modes.
+It is a fully responsive application built to showcase my skills, projects, and professional background. The site is crafted emphasizing a clean user interface, smooth animations, and a seamless user experience with both light and dark modes.
 
 ## Features
 *   **Modern Tech Stack:** Built with React, Vite, and styled with Tailwind CSS.
@@ -63,5 +63,3 @@ To get a local copy up and running, follow these simple steps.
     npm run dev
     ```
     The application will be available at `http://localhost:5173`.
-
-

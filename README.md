@@ -1,70 +1,67 @@
-This is my personal developer portfolio built using React, Tailwind CSS, and Vite.
-It showcases my background, technical skills, and selected projects in a clean, minimal, responsive interface.
-The site includes light and dark mode support, smooth transitions, and a simple component-based architecture.
+# Ramtin Matin - Developer Portfolio
 
-🚀 Features
+This repository contains the source code for my personal portfolio website, live at **[ramtinmatin.com](https://ramtinmatin.com)**.
 
-Responsive UI for desktop and mobile
+It is a fully responsive, single-page application built to showcase my skills, projects, and professional background. The site is crafted with a modern tech stack, emphasizing a clean user interface, smooth animations, and a seamless user experience with both light and dark modes.
 
-Dark mode toggle with persistent theme state
+## Features
+*   **Modern Tech Stack:** Built with React, Vite, and styled with Tailwind CSS.
+*   **Responsive Design:** Optimized layout for a seamless experience on all devices, from mobile to desktop.
+*   **Dark/Light Mode:** Includes a theme toggle that persists the user's preference in `localStorage`.
+*   **Smooth Animations:** Utilizes custom, performance-optimized animations with Tailwind CSS for a dynamic feel.
+*   **Component-Based Architecture:** Logically organized into reusable components and distinct views for clean code and maintainability.
+*   **Interactive Showcase:** Features an interactive carousel to display projects and categorized cards for skills.
 
-Smooth navigation between Home, About, Skills, and Projects
+## Tech Stack
+*   **Framework:** [React](https://react.dev/)
+*   **Build Tool:** [Vite](https://vitejs.dev/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Icons:** [Lucide React](https://lucide.dev/)
+*   **Deployment:** [GitHub Pages](https://pages.github.com/)
 
-Modular component structure (Navbar, Footer, SkillCard, etc.)
+## Project Structure
+The `src` directory is organized to separate concerns, making the codebase clean and scalable.
 
-Clean file organization with views, components, data, and context separation
-
-Hosted resume link
-
-Built with Vite for fast dev/preview
-
-🛠️ Tech Stack
-
-Frontend:
-
-React
-
-Tailwind CSS
-
-Lucide Icons
-
-Vite
-
-Other:
-
-Context API for theme management
-
-Simple state-based routing (no React Router)
-
-📁 Project Structure
+```
 src/
-components/
-NavBar.jsx
-Footer.jsx
-SkillCard.jsx
-SectionTitle.jsx
-AnimatedButton.jsx
-views/
-HomeView.jsx
-AboutView.jsx
-SkillsView.jsx
-ProjectsView.jsx
-context/
-ThemeContext.jsx
-data/
-navItems.js
-skills.js
-projects.js
-App.jsx
-main.jsx
-index.css
+├── assets/         # Static assets like images and resume PDF
+├── components/     # Reusable React components (NavBar, Footer, SkillCard, etc.)
+├── context/        # React Context for global state (e.g., ThemeContext)
+├── data/           # Static data arrays for projects, skills, and navigation
+├── views/          # Main sections/pages of the application (Home, About, etc.)
+├── App.jsx         # Main application component and view router
+├── main.jsx        # Root React component renderer
+└── index.css       # Global styles and Tailwind CSS configurations
+```
 
-⚙️ Getting Started
-Install dependencies
-npm install
+## Getting Started
+To get a local copy up and running, follow these simple steps.
 
-Run the development server
-npm run dev
+### Prerequisites
+*   Node.js (v18 or later)
+*   npm or another package manager
 
-Build for production
-npm run build
+### Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/ramtin-matin/portfolio-website.github.io.git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```sh
+    cd portfolio-website.github.io
+    ```
+
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+
+4.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173`.
+
+

@@ -2,6 +2,7 @@
 import ScoringSystemPic from "../assets/scoringsystem.jpg";
 import PortfolioPic from "../assets/portfolio.png";
 import habitTrackerPic from "../assets/habitTracker.png";
+import chromeExtensionPic from "../assets/chromeExtension.png";
 
 export const INITIAL_PROJECTS = [
   {
@@ -30,6 +31,15 @@ export const INITIAL_PROJECTS = [
     tech: ["React.js", "Python", "FastAPI", "SQL", "Tailwind CSS"],
     date: "Coming soon...",
     imageUrl: habitTrackerPic,
+  },
+  {
+    id: 4,
+    title: "Intership Tracker Chrome Extension",
+    description:
+      "A google chrome extension I built to save internship postings and copy TSV rows in your clipboard using the page URL you're on.",
+    tech: ["JavaScript, HTMl, CSS"],
+    date: "January 2026",
+    imageUrl: chromeExtensionPic,
   },
 ];
 

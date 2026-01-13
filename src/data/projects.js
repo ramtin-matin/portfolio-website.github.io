@@ -37,7 +37,7 @@ export const INITIAL_PROJECTS = [
     title: "Intership Tracker Chrome Extension",
     description:
       "A google chrome extension I built to save internship postings and copy TSV rows in your clipboard using the page URL you're on.",
-    tech: ["JavaScript, HTMl, CSS"],
+    tech: ["JavaScript", "HTMl", "CSS"],
     date: "January 2026",
     imageUrl: chromeExtensionPic,
   },

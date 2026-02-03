@@ -12,7 +12,7 @@ const ProjectsView = () => {
 
   const prevProject = () => {
     setCurrentProject(
-      (prev) => (prev - 1 + INITIAL_PROJECTS.length) % INITIAL_PROJECTS.length
+      (prev) => (prev - 1 + INITIAL_PROJECTS.length) % INITIAL_PROJECTS.length,
     );
   };
 
@@ -25,16 +25,22 @@ const ProjectsView = () => {
       <div className="relative w-full bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-6 transition-all duration-500 ease-in-out transform hover:shadow-rm-teal/50 dark:hover:shadow-rm-green/50 animate-fade-in delay-200">
         {/* Project Image UI */}
         <div className="mb-6 rounded-xl overflow-hidden shadow-xl border-4 border-rm-teal/50 dark:border-rm-green/50">
-          <img
-            src={project.imageUrl}
-            alt={project.title}
-            className="w-full object-cover aspect-video hover:scale-[1.03] transition-transform duration-500"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src =
-                "https://placehold.co/800x500/103b4f/ffffff?text=Project+Image+Missing";
-            }}
-          />
+          <a
+            href={project.projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={project.imageUrl}
+              alt={project.title}
+              className="w-full object-cover aspect-video hover:scale-[1.03] transition-transform duration-500"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src =
+                  "https://placehold.co/800x500/103b4f/ffffff?text=Project+Image+Missing";
+              }}
+            />
+          </a>
         </div>
 
         {/* Project Details */}

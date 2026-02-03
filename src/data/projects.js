@@ -22,6 +22,7 @@ export const INITIAL_PROJECTS = [
     tech: ["React.js", "Tailwind CSS", "JavaScript"],
     date: "Rebuilt Dec 2025",
     imageUrl: PortfolioPic,
+    projectUrl: "http://ramtinmatin.com/",
   },
   {
     id: 3,
@@ -31,15 +32,18 @@ export const INITIAL_PROJECTS = [
     tech: ["React.js", "Python", "FastAPI", "SQL", "Tailwind CSS"],
     date: "Coming soon...",
     imageUrl: habitTrackerPic,
+    projectUrl: "https://github.com/ramtin-matin/Habit-Tracker",
   },
   {
     id: 4,
     title: "Intership Tracker Chrome Extension",
     description:
       "A google chrome extension I built to save internship postings and copy TSV rows in your clipboard using the page URL you're on.",
-    tech: ["JavaScript", "HTMl", "CSS"],
+    tech: ["JavaScript", "HTML", "CSS"],
     date: "January 2026",
     imageUrl: chromeExtensionPic,
+    projectUrl:
+      "https://chromewebstore.google.com/detail/offertrail/ncgopceepkaecgillgmdolbnbacibdgg",
   },
 ];
 

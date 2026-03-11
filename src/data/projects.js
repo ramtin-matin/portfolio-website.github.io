@@ -26,7 +26,7 @@ export const INITIAL_PROJECTS = [
   },
   {
     id: 3,
-    title: "Habit Tracker",
+    title: "HabitSet",
     description:
       "An application to track, analyze, and manage daily habits with RESTful APIs and modern database schema.",
     tech: ["React.js", "Python", "FastAPI", "MySQL", "Tailwind CSS"],

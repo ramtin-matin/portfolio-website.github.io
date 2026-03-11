@@ -29,8 +29,8 @@ export const INITIAL_PROJECTS = [
     title: "Habit Tracker",
     description:
       "An application to track, analyze, and manage daily habits with RESTful APIs and modern database schema.",
-    tech: ["React.js", "Python", "FastAPI", "SQL", "Tailwind CSS"],
-    date: "Coming soon...",
+    tech: ["React.js", "Python", "FastAPI", "MySQL", "Tailwind CSS"],
+    date: "March 2026",
     imageUrl: habitTrackerPic,
     projectUrl: "https://habitset.vercel.app/",
   },

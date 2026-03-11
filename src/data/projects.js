@@ -32,7 +32,7 @@ export const INITIAL_PROJECTS = [
     tech: ["React.js", "Python", "FastAPI", "SQL", "Tailwind CSS"],
     date: "Coming soon...",
     imageUrl: habitTrackerPic,
-    projectUrl: "https://github.com/ramtin-matin/Habit-Tracker",
+    projectUrl: "https://habitset.vercel.app/",
   },
   {
     id: 4,

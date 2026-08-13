@@ -3,6 +3,7 @@ import ScoringSystemPic from "../assets/scoringsystem.jpg";
 import PortfolioPic from "../assets/portfolio.png";
 import habitTrackerPic from "../assets/habitTracker.png";
 import chromeExtensionPic from "../assets/chromeExtension.png";
+import ouraDashboard from "../assets/ouraDashboard.png";
 
 export const INITIAL_PROJECTS = [
   {
@@ -44,6 +45,16 @@ export const INITIAL_PROJECTS = [
     imageUrl: chromeExtensionPic,
     projectUrl:
       "https://chromewebstore.google.com/detail/offertrail/ncgopceepkaecgillgmdolbnbacibdgg",
+  },
+  {
+    id: 5,
+    title: "Oura Ring Dashboard",
+    description:
+      "A full-stack web dashboard that integrates with the Oura API to store, visualize, and explore personal Oura Ring metrics.",
+    tech: ["React", "FastAPI", "Python", "PostgreSQL", "Docker"],
+    date: "August 2026",
+    imageUrl: ouraDashboard,
+    projectUrl: "https://github.com/ramtin-matin/Oura-Ring-Dashboard",
   },
 ];
 
